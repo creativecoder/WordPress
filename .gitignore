@@ -1,59 +1,102 @@
-# Ignore paths that contain user-generated content.
-/sites/*/files
-/sites/*/private
-
-# ** Only works in OSs that support newer versions of fnmatch (Bash 4+)
-/sites/default/**/files
-/sites/default/**/private
-
-# Wordpress #
-############
-wp-config-local.php
-wp-content/uploads
-wp-content/blogs.dir/
-wp-content/upgrade/
-wp-content/backup-db/
-wp-content/advanced-cache.php
-wp-content/wp-cache-config.php
-sitemap.xml
-sitemap.xml.gz
+# Always-ignore extensions #
+############################
+*.bak
+*.diff
+*.err
+*.orig
 *.log
-
-# @TODO writable paths
-wp-content/cache/
-wp-content/backups/
-
-
-# Packages #
-############
-*.7z
-*.dmg
-*.gz
-*.bz2
-*.iso
-*.jar
-*.rar
-*.tar
+*.rej
+*.swo
+*.swp
 *.zip
-*.tgz
-
-# Logs and databases #
-######################
-*.log
-*.sql
+*.vi
+*~
+*.un~
+*.sass-cache
 
 # OS generated files #
 ######################
+*~
+.svn
+.cvs
 .DS_Store*
-ehthumbs.db
-Icon?
-Thumbs.db
 ._*
+.Spotlight-V100
+.Trashes
+Icon?
+ehthumbs.db
+Thumbs.db
+.cache
+.project
+.settings
+.tmproj
+*.esproj
+nbproject
+*.sublime-project
+*.sublime-workspace
 
-# Vim generated files #
-######################
-*.un~
+# Folders to ignore #
+#####################
+.hg
+.svn
+.CVS
+.idea
+node_modules
+dist
+.rvmrc
+.vagrant
+vendor
 
-# SASS #
-##########
-.sass-cache
+# Wordpress files #
+###################
+.env
+**/wp-content/uploads/
+**/wp-content/blogs.dir/
+**/wp-content/upgrade/
+**/wp-content/backup-db/
+**/wp-content/object-cache.php
+**/wp-content/advanced-cache.php
+**/wp-content/wp-cache-config.php
+**/wp-content/cache/
+**/wp-content/backups/
+sitemap.xml
+sitemap.xml.gz
+
+# WPEngine large/disallowed file types
+# a CDN should be used for these
+*.hqx
+*.bin
+*.exe
+*.dll
+*.deb
+*.dmg
+*.iso
+*.img
+*.msi
+*.msp
+*.msm
+*.mid
+*.midi
+*.kar
+*.mp3
+*.ogg
+*.m4a
+*.ra
+*.3gpp
+*.3gp
+*.mp4
+*.mpeg
+*.mpg
+*.mov
+*.webm
+*.flv
+*.m4v
+*.mng
+*.asx
+*.asf
+*.wmv
+*.avi
+*.7z
+*.bz2
+*.jar
+*.rar
