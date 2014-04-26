@@ -1,0 +1,23 @@
+{
+	"name": "Project_Name",
+	"type": "project",
+	"license": "MIT",
+	"description": "Project Description",
+	"homepage": "http://example.com",
+	"authors": [
+		{
+			"name": "Grant Kinney",
+			"email": "grant@exygy.com",
+			"homepage": "https://exygy.com"
+		}
+	],
+	"config": {
+		"preferred-install": "dist"
+	},
+	"require": {
+		"php": ">=5.3.3",
+		"vlucas/phpdotenv": "~1.0.5",
+		"ccampbell/chromephp": "dev-master",
+		"firephp/firephp-core": "~0.4.0"
+	}
+}

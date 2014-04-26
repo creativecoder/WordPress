@@ -1,0 +1,26 @@
+{
+	// Enforcing options
+	"bitwise": true,
+	"curly": true,
+	"eqeqeq": true,
+	"esnext": true,
+	"immed": true,
+	"latedef": true,
+	"newcap": true,
+	"noarg": true,
+	"nonew": true,
+	"plusplus": true,
+	"strict": true,
+	"trailing": true,
+	"undef": true,
+	"unused": true,
+	// Relaxing options
+	"eqnull": true,
+	// Environment options
+	"browser": true,
+	"jquery": true,
+	"node": true,
+	"globals": {
+		"jQuery": false
+	}
+}
